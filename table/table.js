@@ -15,3 +15,9 @@ d3.select('tbody')
             '</th><td>' + d.low +
             '</td><td>' + d.high + '</td>'
   })
+
+
+  d3.selectAll("tr:nth-child(1) .day-high .temp")
+  .html("<strong>hot</strong>")
+  .insert('span', 'strong')
+  .html('today ');
