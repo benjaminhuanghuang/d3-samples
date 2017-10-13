@@ -1,0 +1,10 @@
+d3.select('#viz').append('svg')
+.attr('width', 600)
+.attr('height', 400)
+.style('background', '#C9D7D6')
+.append('rect')
+  .style('fill', '#C61C6F')
+  .attr('width', 200)
+  .attr('height', 100)
+  .attr('x', 20)
+  .attr('y', 30); 
