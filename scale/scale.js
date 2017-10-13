@@ -1,4 +1,4 @@
-var bardata = [20, 30, 45, 15];
+var dataset = [1.2, 2.3, 0.9, 1.5, 3.3];
 
 var height = 400,
   width = 600,
@@ -11,8 +11,8 @@ var max = d3.max(dataset);
 
 var linear = d3.scale
   .linear()
-  .domain([min, max])
-  .range([0, 300]);
+  .domain([min, max])   // range of x
+  .range([0, 300]);     // range of y, map the min value to 0, max value to 300
 
 d3
   .select("#viz")
